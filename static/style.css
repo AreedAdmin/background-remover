@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Drag & Drop Area Styles */
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+#drop-area.highlight {
+    border-color: #6c6;
+}
+#drop-area p {
+    margin: 0;
+    font-size: 16px;
+}
+#drop-area input[type="file"] {
+    display: none;
+}
+#drop-area .button {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* File History Styles */
+#history {
+    margin-top: 30px;
+    text-align: left;
+}
+#history h2 {
+    margin-bottom: 10px;
+}
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.history-item {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.history-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
